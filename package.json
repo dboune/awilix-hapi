@@ -1,0 +1,51 @@
+{
+  "name": "awilix-hapi",
+  "version": "0.1.0",
+  "description": "Awilix plugin for hapi",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "dist/awilix-hapi.js",
+  "types": "dist/awilix-hapi.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean:dist": "rm -rf dist",
+    "clean:node": "rm -rf node_modules",
+    "clean:coverage": "rm -rf coverage",
+    "clean": "yarn clean:dist && yarn clean:node && yarn clean:coverage",
+    "test": "lab",
+    "build": "tsc"
+  },
+  "repository": "https://github.com/dboune/awilix-hapi",
+  "bugs": "https://github.com/dboune/awilix-hapi/issues",
+  "author": "Damian Bouné <dboune@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "awilix",
+    "hapi",
+    "dependency",
+    "dependency-injection",
+    "di"
+  ],
+  "private": true,
+  "devDependencies": {
+    "@types/code": "^4.0.3",
+    "@types/hapi": "^16.1.12",
+    "@types/lab": "^11.1.0",
+    "@types/sinon": "^4.1.3",
+    "awilix": "^2.7.1",
+    "code": "^5.1.2",
+    "hapi": "^16.6.2",
+    "lab": "^15.2.0",
+    "lab-transform-typescript": "^3.0.1",
+    "sinon": "^4.1.4",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "peerDependencies": {
+    "awilix": "^2.7.1",
+    "hapi": "^16.x"
+  }
+}
